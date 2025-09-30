@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Page3Controller" prefWidth="600" prefHeight="400">
+    <!-- Blue Region for the top of the page -->
+    <top>
+        <StackPane prefHeight="100" style="-fx-background-color: #0056b3;" alignment="CENTER">
+            <!-- Image at top -->
+            <ImageView fitHeight="100" fitWidth="200" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="file:/C:/Users/Admin/Downloads/Logo-COFICAB-white-300x83.png"/>
+                </image>
+            </ImageView>
+        </StackPane>
+    </top>
+
+    <!-- Main content area with scroll pane -->
+    <center>
+        <ScrollPane fitToWidth="true">
+            <VBox spacing="20" alignment="CENTER" prefWidth="600">
+                <!-- Worker's Name -->
+                <Label fx:id="workerNameLabel" style="-fx-font-size: 24;" />
+
+                <!-- Operations List with indentation -->
+                <VBox fx:id="operationsList" spacing="20" alignment="CENTER_LEFT" style="-fx-padding: 0 0 0 20px;">
+                    <!-- Operations will be added here dynamically -->
+                </VBox>
+
+                <!-- Presences Label -->
+                <Label fx:id="presencesLabel" text="Presences this month: 0" style="-fx-font-size: 18;" />
+
+                <!-- Remarks input field -->
+                <HBox spacing="10" style="-fx-padding: 0 0 0 20px;">
+                    <Label text="Remarks:" />
+                    <TextArea fx:id="remarksField" promptText="Enter remarks" prefWidth="400" prefHeight="100"/>
+                </HBox>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>
+
+

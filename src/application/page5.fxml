@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Page5Controller" prefWidth="400" prefHeight="300">
+    <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <Label text="Diameter:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="diameterField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <Label text="Quantity:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="quantityField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        
+        <Button text="Save" fx:id="saveButton" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+    </GridPane>
+</StackPane>
