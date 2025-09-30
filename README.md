@@ -1,4 +1,4 @@
-# Coficab Production Tracker  
+# OPIS 
 JavaFX desktop app that lets supervisors and operators log, track and export daily cable-processing operations (formage, glaçage, ajustage, etc.) per worker.
 
 ---
